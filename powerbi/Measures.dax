@@ -1,0 +1,27 @@
+Revenue =
+SUM(FactSales[sales_amount])
+
+Recorded Profit =
+SUM(FactSales[profit])
+
+Orders =
+DISTINCTCOUNT(FactSales[order_id])
+
+Customers =
+DISTINCTCOUNT(FactSales[customer_id])
+
+Profit Margin =
+DIVIDE([Recorded Profit], [Revenue])
+
+Return Orders =
+CALCULATE([Orders], FactSales[is_return] = TRUE())
+
+Undated Orders =
+CALCULATE([Orders], KEEPFILTERS(ISBLANK(FactSales[date_key])))
+
+Top 10 Revenue =
+VAR TopProducts = TOPN(10, ALLSELECTED(DimProduct[product_name]), [Revenue], DESC, DimProduct[product_name], ASC)
+RETURN IF(CONTAINS(TopProducts, DimProduct[product_name], SELECTEDVALUE(DimProduct[product_name])), [Revenue], BLANK())
+
+Monthly Revenue =
+IF(NOT ISBLANK(SELECTEDVALUE(DimDate[month_year])), [Revenue], BLANK())

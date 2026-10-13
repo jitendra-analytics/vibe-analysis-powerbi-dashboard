@@ -1,0 +1,36 @@
+{
+  "rows": {
+    "FactSales": 24905,
+    "DimCustomer": 2000,
+    "DimProduct": 100,
+    "DimRegion": 20,
+    "DimDate": 731
+  },
+  "revenue": "29374086.19",
+  "recorded_profit": "6732332.30",
+  "orders": 24905,
+  "customers": 2000,
+  "profit_margin": 0.22919291025611305,
+  "undated_orders": 10,
+  "returns": 15,
+  "relationships": "Four many-to-one relationships; populated keys all match.",
+  "native_power_bi_test": "User supplied screenshots show the revised report populated in Power BI Desktop with North and Clothing filters, and the four model relationships. Not all interaction combinations have been independently tested.",
+  "report_schema_validation": {
+    "files_passed": 22,
+    "errors": 0
+  },
+  "visual_bindings_and_bounds": "Passed",
+  "compatibility_repairs": [
+    "Report definition version changed from 4.0.0 to 2.0.0",
+    "Added .platform metadata to Report and SemanticModel",
+    "Page metadata updated to 1.1.0 with activePageName",
+    "Corrected theme name and resource registration mismatches identified by Microsoft CLI"
+  ],
+  "microsoft_report_authoring_cli": {
+    "version": "0.5.0",
+    "result": "succeeded",
+    "errors": 0,
+    "warnings": 0,
+    "remote_schema_validation": true
+  }
+}

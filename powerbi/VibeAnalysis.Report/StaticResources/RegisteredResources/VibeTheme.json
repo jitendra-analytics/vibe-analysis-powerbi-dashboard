@@ -1,0 +1,30 @@
+{
+  "name": "VibeTheme.json",
+  "dataColors": [
+    "#137C8B",
+    "#5365CB",
+    "#E8A34B",
+    "#B36B91",
+    "#61A89C"
+  ],
+  "background": "#F3F6FA",
+  "foreground": "#172B4D",
+  "tableAccent": "#137C8B",
+  "textClasses": {
+    "title": {
+      "fontFace": "Segoe UI",
+      "fontSize": 13,
+      "color": "#172B4D"
+    },
+    "label": {
+      "fontFace": "Segoe UI",
+      "fontSize": 10,
+      "color": "#526078"
+    },
+    "callout": {
+      "fontFace": "Segoe UI Semibold",
+      "fontSize": 27,
+      "color": "#172B4D"
+    }
+  }
+}

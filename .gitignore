@@ -1,0 +1,6 @@
+**/.pbi/
+**/cache.abf
+**/localSettings.json
+.DS_Store
+Thumbs.db
+~$*

@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Vibe Analysis",
+    "description": "E-commerce analytics portfolio by Jitendra More"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "3a83a1d4-ae68-5062-8d37-1c9b9bfec5bb"
+  }
+}

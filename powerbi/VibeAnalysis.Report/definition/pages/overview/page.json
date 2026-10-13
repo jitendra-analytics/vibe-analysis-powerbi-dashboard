@@ -1,0 +1,171 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "overview",
+  "displayName": "Commerce overview",
+  "displayOption": "FitToPage",
+  "width": 1440,
+  "height": 1090,
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#F3F6FA'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visualInteractions": [
+    {
+      "source": "filter_year",
+      "target": "kpi_0",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_year",
+      "target": "kpi_1",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_year",
+      "target": "kpi_2",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_year",
+      "target": "kpi_3",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_year",
+      "target": "kpi_4",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_year",
+      "target": "monthly_sales",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_year",
+      "target": "category_revenue",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_year",
+      "target": "region_profit",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_year",
+      "target": "top_products",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_region",
+      "target": "kpi_0",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_region",
+      "target": "kpi_1",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_region",
+      "target": "kpi_2",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_region",
+      "target": "kpi_3",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_region",
+      "target": "kpi_4",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_region",
+      "target": "monthly_sales",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_region",
+      "target": "category_revenue",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_region",
+      "target": "region_profit",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_region",
+      "target": "top_products",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_category",
+      "target": "kpi_0",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_category",
+      "target": "kpi_1",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_category",
+      "target": "kpi_2",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_category",
+      "target": "kpi_3",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_category",
+      "target": "kpi_4",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_category",
+      "target": "monthly_sales",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_category",
+      "target": "category_revenue",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_category",
+      "target": "region_profit",
+      "type": "DataFilter"
+    },
+    {
+      "source": "filter_category",
+      "target": "top_products",
+      "type": "DataFilter"
+    }
+  ]
+}
