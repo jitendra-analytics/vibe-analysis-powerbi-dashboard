@@ -22,7 +22,7 @@ This is an **AI-assisted learning and portfolio project** with substantial AI-ge
 
 ### Full dashboard — all filters
 
-<img src="screenshots/dashboard-overview.png" alt="Vibe Analysis Power BI dashboard with all years, regions and categories selected: revenue 29.37M, provisional profit 6.73M, orders 25K, customers 2,000 and provisional margin 22.92%" width="850">
+<img src="C:\Users\intel\OneDrive\New folder\OneDrive\Pictures\Screenshots">
 
 *Power BI Desktop screenshot supplied by Jitendra More. Year, Region and Category are all set to All. KPI cards use rounded display values: 25K orders represents 24,905 orders; exact totals are listed below.*
 
