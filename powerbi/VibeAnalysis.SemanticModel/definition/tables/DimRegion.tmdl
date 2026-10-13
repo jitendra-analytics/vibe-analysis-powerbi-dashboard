@@ -1,0 +1,40 @@
+table DimRegion
+	lineageTag: fffdf301-f2ba-5e06-9f49-e881fec05e35
+
+	column region_id
+		dataType: string
+		isHidden
+		isKey
+		lineageTag: db3e2c56-f65a-50e1-830f-0d08df9c92d2
+		summarizeBy: none
+		sourceColumn: region_id
+
+	column state
+		dataType: string
+		lineageTag: ab654562-b4e1-598b-8dfd-32639a938636
+		summarizeBy: none
+		sourceColumn: state
+
+	column city
+		dataType: string
+		lineageTag: 7263d444-f75a-5a51-9db1-d48b30d78942
+		summarizeBy: none
+		sourceColumn: city
+
+	column region
+		dataType: string
+		lineageTag: 89769424-5ca0-58e4-b14d-3dfc683c4060
+		summarizeBy: none
+		sourceColumn: region
+
+	partition DimRegion = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(Binary.FromText("cmVnaW9uX2lkLHN0YXRlLGNpdHkscmVnaW9uClIwMDEsTWFoYXJhc2h0cmEsTWFoYXJhc2h0cmEgQ2l0eSxXZXN0ClIwMDIsR3VqYXJhdCxHdWphcmF0IENpdHksV2VzdApSMDAzLFJhamFzdGhhbixSYWphc3RoYW4gQ2l0eSxXZXN0ClIwMDQsR29hLEdvYSBDaXR5LFdlc3QKUjAwNSxNYWRoeWEgUHJhZGVzaCxNYWRoeWEgUHJhZGVzaCBDaXR5LENlbnRyYWwKUjAwNixEZWxoaSxEZWxoaSBDaXR5LE5vcnRoClIwMDcsUHVuamFiLFB1bmphYiBDaXR5LE5vcnRoClIwMDgsSGFyeWFuYSxIYXJ5YW5hIENpdHksTm9ydGgKUjAwOSxVdHRhciBQcmFkZXNoLFV0dGFyIFByYWRlc2ggQ2l0eSxOb3J0aApSMDEwLFV0dGFyYWtoYW5kLFV0dGFyYWtoYW5kIENpdHksTm9ydGgKUjAxMSxLYXJuYXRha2EsS2FybmF0YWthIENpdHksU291dGgKUjAxMixUYW1pbCBOYWR1LFRhbWlsIE5hZHUgQ2l0eSxTb3V0aApSMDEzLEtlcmFsYSxLZXJhbGEgQ2l0eSxTb3V0aApSMDE0LFRlbGFuZ2FuYSxUZWxhbmdhbmEgQ2l0eSxTb3V0aApSMDE1LEFuZGhyYSBQcmFkZXNoLEFuZGhyYSBQcmFkZXNoIENpdHksU291dGgKUjAxNixXZXN0IEJlbmdhbCxXZXN0IEJlbmdhbCBDaXR5LEVhc3QKUjAxNyxPZGlzaGEsT2Rpc2hhIENpdHksRWFzdApSMDE4LEJpaGFyLEJpaGFyIENpdHksRWFzdApSMDE5LEpoYXJraGFuZCxKaGFya2hhbmQgQ2l0eSxFYXN0ClIwMjAsQXNzYW0sQXNzYW0gQ2l0eSxFYXN0Cg==", BinaryEncoding.Base64), [Delimiter=",", Columns=4, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Nulls = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+				    Typed = Table.TransformColumnTypes(Nulls, {{"region_id", type text}, {"state", type text}, {"city", type text}, {"region", type text}}, "en-US")
+				in
+				    Typed
+
