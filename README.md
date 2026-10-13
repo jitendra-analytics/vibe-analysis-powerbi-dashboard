@@ -19,6 +19,7 @@ This project was developed end to end using **OpenAI ChatGPT (GPT-6 Astra)** thr
 This is an **AI-assisted learning and portfolio project** with substantial AI-generated implementation. The documentation records the calculations, cleaning decisions and unresolved issues so the work can be reviewed and explained.
 
 ## Dashboard preview
+<img src="eenshots/Screenshot 2026-10-13 202836.png">
 
 ### Full dashboard — all filters
 
