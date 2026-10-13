@@ -24,13 +24,7 @@ This is an **AI-assisted learning and portfolio project** with substantial AI-ge
 
 <h2>Power BI Dashboard Preview</h2>
 <h2>Power BI Dashboard Preview</h2>
-
-<p align="center">
-  <img src="./screenshots/dashboard-overview.png"
-       alt="Vibe Analysis E-Commerce Dashboard"
-       width="850">
-</p>
-
+screenshots/Screenshot 2026-10-13 202836.png
 *Power BI Desktop screenshot supplied by Jitendra More. Year, Region and Category are all set to All. KPI cards use rounded display values: 25K orders represents 24,905 orders; exact totals are listed below.*
 
 <details>
